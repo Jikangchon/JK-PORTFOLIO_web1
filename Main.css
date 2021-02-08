@@ -1,0 +1,83 @@
+header {
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background: rgb(221, 221, 221);
+    font-weight: regular;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'NotoSansCJKkr-regular';
+}
+
+#main-menu,
+#sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#main-menu > li {
+    float: left; 
+    border: 1px solid  rgba(255, 255, 255, 0.973);
+    background: rgba(255, 255, 255, 0.973);
+}
+
+#main-menu > li > a {
+    font-size: 0.85rem;
+    color: rgba(26, 26, 26, 0.85);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    display: block;
+    padding: 12px 40px;
+    border-right: 1px solid rgba(0,0,0,0,15);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0,15);
+}
+
+#main-menu > li:nth-child(1) > a {
+    border-left: 1px solid rgba(50, 81, 146, 0.973);
+}
+
+
+#main-menu > li:hover #sub-menu {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
+#sub-menu {
+    position: absolute;
+    background: rgba(0,0,0,0,15); 
+    opacity: 0;
+    visibility: hidden;
+}
+
+#sub-menu > li {
+    padding: 16px 28px;
+    border-bottom: 1px solid rgba(14, 85, 126, 0.973);
+    background: rgba(255, 255, 255, 0.973);
+}
+
+#sub-menu > li > a {
+    color: rgba(11, 71, 105, 0.973);
+    text-decoration: none;
+}
+
+#home-title {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#home-title > {
+    color: rgb(245, 156, 55);
+    text-align: center;
+}
